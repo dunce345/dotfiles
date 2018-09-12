@@ -82,7 +82,6 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-
 /* Terminal colors (16 first used in escape sequence) */
 
 static const char *colorname[] = {
@@ -109,6 +108,7 @@ unsigned int defaultbg = 0;
 static unsigned int defaultcs = 13;
 static unsigned int defaultrcs = 0;
 
+
 /*
  * Default shape of cursor
  * 2: Block ("█")
@@ -116,7 +116,7 @@ static unsigned int defaultrcs = 0;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 5;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
