@@ -1,0 +1,186 @@
+[colors]
+
+;Transparent Light blue
+tblue = #54616ddd
+
+;White
+white = #ffffff
+
+;Red
+red = #ff0000
+
+;Yellow
+yellow = #eeff38
+
+;Light Yellow
+lyellow = #fffb30
+
+;Green
+green = #2dff29 
+
+;turquoise
+tqi = #30ff9e
+
+;orang
+orange = #ff4300
+
+;Nimbu
+nim = #d0ff00
+
+[bar/example]
+;monitor = ${env:MONITOR:HDMI-1}
+
+width = 100%
+height = 18
+bottom = true
+fixed-center = true
+
+background = ${colors.tblue}
+foreground = ${colors.white}
+
+line-size = 3
+
+border-size = 0
+border-color = #c342b00
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 2
+module-margin-right = 2
+
+font-0 = "Roboto Condensed:pixelsize=10;1"
+;font-1 = "Noto Color Emoji:pixelsize=2"
+
+modules-left = i3 xwindow 
+modules-center = 
+modules-right = wlan eth battery date
+
+tray-position = right
+tray-padding = 2
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode-padding = 2
+;label-mode-foreground = #000
+;label-mode-background = ${colors.primary}
+
+; focused = Active workspace on focused monitor
+label-focused = %index%
+label-focused-background = #44444444
+label-focused-padding = 2
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %index%
+label-unfocused-padding = 2
+
+; urgent = Workspace with urgency hint set
+label-urgent = %index%
+label-urgent-background = #FF000000
+label-urgent-padding = 2
+
+; Separator in between workspaces
+label-separator = |
+
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label>
+label = BL %percentage%%
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-underline = #f90000
+label = CPU %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-underline = #4bffdc
+label = RAM %percentage_used%%
+
+[module/wlan]
+type = internal/network
+interface = wlp10s0f0
+interval = 3.0
+
+format-connected = <label-connected>
+format-connected-underline = ${colors.orange}
+label-connected = %essid%
+
+[module/eth]
+type = internal/network
+interface = enp8s0
+interval = 3.0
+
+format-connected-underline = #55aa55
+label-connected = %local_ip%
+
+[module/date]
+type = internal/date
+interval = 5
+
+
+date = "%d/%m"
+date-alt = " %Y-%m-%d"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+label = %time%   %date%
+format-underline = ${colors.tqi}
+
+[module/alsa]
+type = internal/alsa
+
+format-volume = <label-volume>
+label-volume = VOL %percentage%%
+label-volume-foreground = ${root.foreground}
+label-muted = sound-muted
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ACAD
+full-at = 98
+
+format-charging = <label-charging>
+label-charging = CHG %percentage%%
+format-charging-underline = ${colors.yellow}
+
+format-full = <label-full>
+label-full = CHGD
+format-full-underline = ${colors.green}
+
+format-discharging = <label-discharging>
+label-discharging = BAT %percentage%%
+format-discharging-underline = ${colors.red}
+
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini

@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --bg-max '/home/roshan/.wallpaper/11.jpg' 
