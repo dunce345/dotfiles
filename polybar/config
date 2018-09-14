@@ -3,6 +3,9 @@
 
 ;	-- BLUES --
 
+;transparent
+tpt = #00000000
+
 ;Transparent Light blue
 tblue = #54616ddd
 
@@ -33,7 +36,7 @@ green = #2dff29
 tqi = #30ff9e
 
 ;orang
-orange = #ff4300
+orange =  #fff430
 
 ;Nimbu
 nim = #d0ff00
@@ -46,10 +49,10 @@ height = 18
 bottom = true
 fixed-center = true
 
-background = ${colors.tblue}
+background = ${colors.tpt}
 foreground = ${colors.white}
 
-line-size = 3
+line-size = 2
 
 border-size = 0
 border-color = #c342b00
@@ -63,8 +66,8 @@ module-margin-right = 2
 font-0 = "Roboto Condensed:pixelsize=10;1"
 ;font-1 = "Noto Color Emoji:pixelsize=2"
 
-modules-left = i3 xwindow 
-modules-center = 
+modules-left = i3 
+modules-center = xwindow
 modules-right = wlan eth battery date
 
 tray-position = right
