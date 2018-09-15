@@ -49,7 +49,7 @@ height = 18
 bottom = true
 fixed-center = true
 
-background = ${colors.tpt}
+background = ${colors.tblue}
 foreground = ${colors.white}
 
 line-size = 2

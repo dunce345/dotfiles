@@ -216,5 +216,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#	-- POLYBAR--
+#	--STARTUP--
+exec_always --no-startup-id feh --bg-max ~/.wallpaper/Wallpapers/ciri.png
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+
