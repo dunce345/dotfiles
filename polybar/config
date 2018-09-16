@@ -1,10 +1,11 @@
 [colors]
 
 
-;	-- BLUES --
-
 ;transparent
 tpt = #00000000
+
+;brown
+tbr = #87481600
 
 ;Transparent Light blue
 tblue = #54616ddd
@@ -49,7 +50,7 @@ height = 18
 bottom = true
 fixed-center = true
 
-background = ${colors.tblue}
+background = ${colors.tpt}
 foreground = ${colors.white}
 
 line-size = 2
