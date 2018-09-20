@@ -94,7 +94,7 @@ label-mode-padding = 2
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = #44444444
+label-focused-background = ${colors.tblue}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
