@@ -65,6 +65,7 @@ module-margin-left = 2
 module-margin-right = 2
 
 font-0 = "Roboto Condensed:pixelsize=10;1"
+font-1 = "Hack:pixelsize=9;1"
 
 modules-left =   alsa xbacklight
 modules-center = i3
@@ -129,7 +130,7 @@ interval = 3.0
 
 format-connected = <label-connected>
 format-connected-underline = ${colors.color1}
-label-connected = %essid%
+label-connected = ⟪ %essid% ⟫
 
 [module/eth]
 type = internal/network
