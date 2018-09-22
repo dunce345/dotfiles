@@ -81,6 +81,10 @@ client.background       #ffffff
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# assigning different things to specific workspaces
+assign [class="^firefox$"] 2
+assign [class="discord"] 10
+
 # start a terminal
 #bindsym $mod+Return exec --no-startup-id urxvt
 bindsym $mod+Return exec --no-startup-id st
