@@ -82,7 +82,7 @@ client.background       #ffffff
 floating_modifier $mod
 
 # assigning different things to specific workspaces
-assign [class="^firefox$"] 2
+assign [class="Firefox"] 2
 assign [class="discord"] 10
 
 # start a terminal
