@@ -4,6 +4,9 @@
 ;transparent
 tpt = #00000000
 
+;black
+black = #000000
+
 ;brown
 tbr = #874816
 
@@ -50,7 +53,7 @@ height = 18
 bottom = true
 fixed-center = true
 
-background = ${colors.tpt}
+background = ${colors.black}
 foreground = ${colors.white}
 
 line-size = 2
