@@ -61,8 +61,6 @@ default_floating_border pixel 3
 
 hide_edge_borders smart
 
-#for_window [class="st"] floating enable
-
 floating_minimum_size 50 x 50
 floating_maximum_size -1 x -1
 
@@ -86,8 +84,7 @@ assign [class="Firefox"] 2
 assign [class="discord"] 10
 
 # start a terminal
-#bindsym $mod+Return exec --no-startup-id urxvt
-bindsym $mod+Return exec --no-startup-id st
+bindsym $mod+Return exec --no-startup-id termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -221,7 +218,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #	--STARTUP--
-exec_always --no-startup-id feh --bg-max ~/.wallpaper/Wallpapers/505850.jpg
+exec_always --no-startup-id feh --bg-max ~/.wallpaper/arch-ascii.png
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
  
 

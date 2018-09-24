@@ -1,24 +1,53 @@
-static const char *colorname[] = {
-  "#151718", /* base00 */
-  "#cd3f45", /* base08 */
-  "#9fca56", /* base0B */
-  "#e6cd69", /* base0A */
-  "#55b5db", /* base0D */
-  "#a074c4", /* base0E */
-  "#55dbbe", /* base0C */
-  "#d6d6d6", /* base05 */
-  "#41535b", /* base03 */
-  "#db7b55", /* base09 */
-  "#858687", /* base01 */
-  "#3b758c", /* base02 */
-  "#43a5d5", /* base04 */
-  "#eeeeee", /* base06 */
-  "#be5046", /* base0F */
-  "#ffffff", /* base07 */
-};
 
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 13;
-static unsigned int defaultrcs = 0;
+color0  =  #151718
+color8  =  #cd3f45
+color11 =  #9fca56
+color10 =  #e6cd69
+color13 =  #55b5db
+color14 =  #a074c4
+color12 =  #55dbbe
+color5  =  #d6d6d6
+color3  =  #41535b
+color9  =  #db7b55
+color1  =  #858687
+color2  =  #3b758c
+color4  =  #43a5d5
+color6  =  #eeeeee
+color15 =  #be5046
+color7  =  #ffffff
 
+
+foeground=color7
+background =color0
+cursor = color13
+cursor_foreground=color 0;
+
+[options]
+font = Menlo 11
+
+[colors]
+foreground = rgb(239, 240, 235)
+foreground_bold = rgb(239, 240, 235)
+background = rgb(40, 42, 56)
+
+# If unset, will reverse foreground and background
+highlight = #2f2f2f
+
+# Colors from original hyper-snazzy theme
+color0 = rgb(40,42,56)
+color1 = rgb(255,92,87)
+color2 = rgb(90,247,142)
+color3 = rgb(243,249,157)
+color4 = rgb(87,199,255)
+color5 = rgb(255,106,193)
+color6 = rgb(154,237,254)
+color7 = rgb(241,241,240)
+
+# Other default termite colors
+color9 = #dca3a3
+color10 = #c3bf9f
+color11 = #f0dfaf
+color12 = #94bff3
+color13 = #ec93d3
+color14 = #93e0e3
+color15 = #ffffff
