@@ -23,7 +23,7 @@ scrollback_lines = 20000
 #cursor_blink = system
 
 # "block", "underline" or "ibeam"
-#cursor_shape = block
+cursor_shape = ibeam
 
 # Hide links that are no longer valid in url select overlay mode
 #filter_unmatched_urls = true
@@ -38,8 +38,8 @@ scrollback_lines = 20000
 #scrollbar = off
 
 [hints]
-#padding = 2
-#border = #3f3f3f
+padding = 5
+border = #000000
 #border_width = 5
 #roundness = 2.0
 
@@ -47,29 +47,53 @@ scrollback_lines = 20000
 [options]
 font = hack 10 
 
+
 [colors]
-foreground = rgb(239, 240, 235)
-foreground_bold = rgb(239, 240, 235)
-background = rgb(40, 42, 56)
+# Base16 Bright
+# Author: Chris Kempson (http://chriskempson.com)
 
-# If unset, will reverse foreground and background
-highlight = #2f2f2f
+foreground          = #e0e0e0
+foreground_bold     = #f5f5f5
+cursor              = #f5f5f5
+cursor_foreground   = #000000
+background          = rgba(0, 0, 0)
 
-# Colors from original hyper-snazzy theme
-color0 = rgb(40,42,56)
-color1 = rgb(255,92,87)
-color2 = rgb(90,247,142)
-color3 = rgb(243,249,157)
-color4 = rgb(87,199,255)
-color5 = rgb(255,106,193)
-color6 = rgb(154,237,254)
-color7 = rgb(241,241,240)
+# 16 color space
 
-# Other default termite colors
-color9 = #dca3a3
-color10 = #c3bf9f
-color11 = #f0dfaf
-color12 = #94bff3
-color13 = #ec93d3
-color14 = #93e0e3
+# Black, Gray, Silver, White
+color0  = #000000
+color8  = #b0b0b0
+color7  = #e0e0e0
 color15 = #ffffff
+
+# Red
+color1  = #fb0120
+color9  = #fb0120
+
+# Green
+color2  = #a1c659
+color10 = #a1c659
+
+# Yellow
+color3  = #fda331
+color11 = #fda331
+
+# Blue
+color4  = #6fb3d2
+color12 = #6fb3d2
+
+# Purple
+color5  = #d381c3
+color13 = #d381c3
+
+# Teal
+color6  = #76c7b7
+color14 = #76c7b7
+
+# Extra colors
+color16 = #fc6d24
+color17 = #be643c
+color18 = #303030
+color19 = #505050
+color20 = #d0d0d0
+color21 = #f5f5f5

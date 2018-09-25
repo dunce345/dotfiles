@@ -38,13 +38,13 @@ bindsym --release $mod+Shift+g exec --no-startup-id import -window root ~/scrsho
 #	--MULTIMEDIA KEY SETTINGS--
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 
 
 # Volume Controls
-bindsym XF86AudioMute exec amixer set Master toggle
-bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
-bindsym XF86AudioLowerVolume exec amixer set Master 5%-
+bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
