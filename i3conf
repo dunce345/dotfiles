@@ -12,9 +12,10 @@
 
 set $mod Mod4
 
-#	--COLOR SETTINGS--
+#	--SETTINGS--
 set $transparent #00000000
 
+set $shutdown 
 #	--FONT SETTINGS--	
 font pango:Roboto Condensed 8
 #font pango:DejaVu Sans Mono 8
@@ -25,12 +26,12 @@ bindsym $mod+Shift+Home exec shutdown -h now
 
 bindsym $mod+Shift+u exec reboot
 
-bindsym $mod+Shift+l exec i3lock -i ~/.wallpaper/11.png
+bindsym $mod+Shift+l exec --no-startup-id i3lock -i ~/.wallpaper/11.png
 
 # Take a screenshot upon pressing $mod+PrtSc (select an area)
 bindsym --release $mod+Print exec --no-startup-id import ~/scrshot/$(date '+%H_%M_%S-%d_%m').png
 
-bindsym --release $mod+Shift+g exec --no-startup-id import -window root ~/scrshot/$(date '+%H_%M_%S-%d_%m').png
+bindsym --release $mod+Shift+Print exec --no-startup-id import -window root ~/scrshot/$(date '+%H_%M_%S-%d_%m').png
 
 # Record screen to gif with byzanz for 10s with 5s delay
 #bindsym --release $mod+Shift+Print exec --no-startup-id byzanz-record -d 10 --delay=5 -x 0 -y 0 -w 1366 -h 768 /home/roshan/scrshot/desktop-animation.gif
