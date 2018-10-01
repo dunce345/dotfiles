@@ -15,15 +15,17 @@ set $mod Mod4
 #	--SETTINGS--
 set $transparent #00000000
 
+set $shutdown "poweroff"
+
 #	--FONT SETTINGS--	
 font pango:Roboto Condensed 8
 #font pango:DejaVu Sans Mono 8
 
 
 #	--GEN SETTINGS--
-bindsym $mod+Shift+Home exec ~/.config/scripts/prompt.sh "Are you sure you want to shutdown?" "shutdown -h now"
+bindsym $mod+Shift+Home exec --no-startup-id ~/.config/scripts/prompt.sh "Are you sure you want to shutdown?" "$shutdown"
 
-bindsym $mod+Shift+u exec ~/.config/scripts/prompt.sh "Are you sure you want to reboot?" "reboot"
+bindsym $mod+Shift+u exec --no-startup-id ~/.config/scripts/prompt.sh "Are you sure you want to reboot?" "reboot"
 
 bindsym $mod+Shift+l exec --no-startup-id i3lock -i ~/.wallpaper/11.png
 
