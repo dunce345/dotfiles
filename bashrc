@@ -22,4 +22,4 @@ alias wifi-d="nmcli dev disconnect wlp10s0f0"
 alias wifi-c="nmcli con up $1"
 alias wifi-off="nmcli radio wifi off"
 alias wifi-on="nmcli radio wifi on"
-
+alias scrshot="cd ~/scrshot"
