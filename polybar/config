@@ -56,7 +56,7 @@ height = 18
 bottom = true
 fixed-center = true
 
-background = ${colors.black}
+background = ${colors.tpt}
 foreground = ${colors.white}
 
 line-size = 2
@@ -101,7 +101,7 @@ label-mode-padding = 2
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${colors.tpt}
+label-focused-background = ${colors.tblue}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
