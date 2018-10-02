@@ -15,7 +15,6 @@ set $mod Mod4
 #	--SETTINGS--
 set $transparent #00000000
 
-set $shutdown "poweroff"
 
 #	--FONT SETTINGS--	
 font pango:Roboto Condensed 8
@@ -23,11 +22,8 @@ font pango:Roboto Condensed 8
 
 
 #	--GEN SETTINGS--
-bindsym $mod+Shift+Home exec --no-startup-id ~/.config/scripts/prompt.sh "Are you sure you want to shutdown?" "$shutdown"
-
-bindsym $mod+Shift+u exec --no-startup-id ~/.config/scripts/prompt.sh "Are you sure you want to reboot?" "reboot"
-
-bindsym $mod+Shift+l exec --no-startup-id i3lock -i ~/.wallpaper/11.png
+#Shutdown/Reboot/lock script
+bindsym $mod+Shift+Home exec --no-startup-id ~/.config/scripts/prompt2.sh
 
 # Take a screenshot upon pressing $mod+PrtSc (select an area)
 bindsym --release $mod+Print exec --no-startup-id import ~/scrshot/$(date '+%H_%M_%S-%d_%m').png
@@ -35,7 +31,7 @@ bindsym --release $mod+Print exec --no-startup-id import ~/scrshot/$(date '+%H_%
 bindsym --release $mod+Shift+Print exec --no-startup-id import -window root ~/scrshot/$(date '+%H_%M_%S-%d_%m').png
 
 # Record screen to gif with byzanz for 10s with 5s delay
-#bindsym --release $mod+Shift+Print exec --no-startup-id byzanz-record -d 10 --delay=5 -x 0 -y 0 -w 1366 -h 768 /home/roshan/scrshot/desktop-animation.gif
+bindsym --release $mod+Shift+u exec --no-startup-id byzanz-record -d 10 --delay=5 -x 0 -y 0 -w 1366 -h 768 /home/roshan/scrshot/desktop-animation.gif
 
 #	--MULTIMEDIA KEY SETTINGS--
 
