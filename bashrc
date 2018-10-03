@@ -8,6 +8,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=always'
 alias v="vim"
+alias sv="sudo vim"
 alias nano="nano -c"
 PS1='[r0x0r|\w] $'
 eval "$(dircolors /home/roshan/.dircolors)"
@@ -22,4 +23,5 @@ alias wifi-d="nmcli dev disconnect wlp10s0f0"
 alias wifi-c="nmcli con up $1"
 alias wifi-off="nmcli radio wifi off"
 alias wifi-on="nmcli radio wifi on"
+alias wifi-list="nmcli dev wifi list"
 alias scrshot="cd ~/scrshot"
