@@ -26,9 +26,9 @@ font pango:Roboto Condensed 8
 bindsym $mod+Shift+Home exec --no-startup-id ~/.config/scripts/prompt2.sh
 
 # Take a screenshot upon pressing $mod+PrtSc (select an area)
-bindsym --release $mod+Print exec --no-startup-id import ~/scrshot/$(date '+%H_%M_%S-%d_%m').png
+bindsym --release $mod+Print exec --no-startup-id import ~/scrshot/$(date '+%d_%m-%H_%M_%S').png
 
-bindsym --release $mod+Shift+Print exec --no-startup-id import -window root ~/scrshot/$(date '+%H_%M_%S-%d_%m').png
+bindsym --release $mod+Shift+Print exec --no-startup-id import -window root ~/scrshot/$(date '+%d_%m-%H_%M_%S').png
 
 # Record screen to gif with byzanz for 10s with 5s delay
 bindsym --release $mod+Shift+u exec --no-startup-id byzanz-record -d 10 --delay=5 -x 0 -y 0 -w 1366 -h 768 /home/roshan/scrshot/desktop-animation.gif
@@ -63,7 +63,7 @@ floating_minimum_size 50 x 50
 floating_maximum_size -1 x -1
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #3d97b8
+client.focused          #333333 #285577 #ffffff #2e9ef4   #ffffff
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
