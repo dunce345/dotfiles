@@ -25,6 +25,9 @@ font pango:Roboto Condensed 8
 #Shutdown/Reboot/lock script
 bindsym $mod+Shift+Home exec --no-startup-id ~/.config/scripts/prompt2.sh
 
+#Screen lock
+bindsym $mod+Shift+l exec --no-startup-id i3lock -i ~/.wallpaper/11.png 
+
 # Take a screenshot upon pressing $mod+PrtSc (select an area)
 bindsym --release $mod+Print exec --no-startup-id import ~/scrshot/$(date '+%d_%m-%H_%M_%S').png
 

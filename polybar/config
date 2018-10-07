@@ -56,7 +56,7 @@ height = 18
 bottom = true
 fixed-center = true
 
-background = ${colors.tpt}
+background = ${colors.black}
 foreground = ${colors.white}
 
 line-size = 2
@@ -74,7 +74,7 @@ font-0 = "Roboto Condensed:pixelsize=10;1"
 font-1 = "Hack:pixelsize=9;1"
 
 modules-left =   alsa xbacklight
-modules-center = i3
+modules-center = i3 xwindow
 modules-right = wlan eth battery date
 
 tray-position = right
