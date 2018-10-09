@@ -219,7 +219,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #	--STARTUP--
-exec_always --no-startup-id feh --bg-max ~/.wallpaper/Wallpapers/505850.png
+exec_always --no-startup-id feh --bg-max ~/.wallpaper/Wallpapers/505850.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
  
 

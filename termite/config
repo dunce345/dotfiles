@@ -49,52 +49,51 @@ font = hack 10
 
 
 [colors]
-# Base16 Bright
-# Author: Chris Kempson (http://chriskempson.com)
+# Base16 Google Dark
+# Author: Seth Wright (http://sethawright.com)
 
-foreground          = #e0e0e0
-foreground_bold     = #f5f5f5
-cursor              = #f5f5f5
-cursor_foreground   = #000000
-background          = rgba(0, 0, 0)
+foreground          = #fcfcfc
+foreground_bold     = #e0e0e0
+cursor              = #e0e0e0
+cursor_foreground   = #1d1f21
+background          = rgba(0,0,0)
 
 # 16 color space
 
 # Black, Gray, Silver, White
-color0  = #000000
-color8  = #b0b0b0
-color7  = #e0e0e0
+color0  = #1d1f21
+color8  = #969896
+color7  = #c5c8c6
 color15 = #ffffff
 
 # Red
-color1  = #fb0120
-color9  = #fb0120
+color1  = #CC342B
+color9  = #CC342B
 
 # Green
-color2  = #a1c659
-color10 = #a1c659
+color2  = #198844
+color10 = #198844
 
 # Yellow
-color3  = #fda331
-color11 = #fda331
+color3  = #FBA922
+color11 = #FBA922
 
 # Blue
-color4  = #6fb3d2
-color12 = #6fb3d2
+color4  = #3971ED
+color12 = #3971ED
 
 # Purple
-color5  = #d381c3
-color13 = #d381c3
+color5  = #A36AC7
+color13 = #A36AC7
 
 # Teal
-color6  = #76c7b7
-color14 = #76c7b7
+color6  = #3971ED
+color14 = #3971ED
 
 # Extra colors
-color16 = #fc6d24
-color17 = #be643c
-color18 = #303030
-color19 = #505050
-color20 = #d0d0d0
-color21 = #f5f5f5
-
+color16 = #F96A38
+color17 = #3971ED
+color18 = #282a2e
+color19 = #373b41
+color20 = #b4b7b4
+color21 = #e0e0e0

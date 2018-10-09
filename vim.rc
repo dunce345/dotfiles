@@ -62,3 +62,7 @@ endif
 
 set number
 set tabstop=4
+" Clear highlighting on escape in normal mode
+nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
+

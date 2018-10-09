@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=always'
 alias v="vim"
 alias sv="sudo vim"
-alias nano="nano -c"
+alias w="weechat"
 PS1='[r0x0r|\w] $'
 eval "$(dircolors /home/roshan/.dircolors)"
 
