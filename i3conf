@@ -83,6 +83,7 @@ floating_modifier $mod
 # assigning different things to specific workspaces
 assign [class="Firefox"] 2
 assign [class="discord"] 10
+assign [Class="Evince"] 3
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id termite

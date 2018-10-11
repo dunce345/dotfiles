@@ -10,7 +10,8 @@ alias grep='grep --color=always'
 alias v="vim"
 alias sv="sudo vim"
 alias w="weechat"
-PS1='[\e[0;31mr0x0r\e[m|\w] $'
+alias sf="df -h | grep \"/dev/sd"\"
+PS1='[\[\e[0;31m\]r0x0r\[\e[m\]|\[\e[1;36m\]\w\[\e[m\]] $'
 eval "$(dircolors /home/roshan/.dircolors)"
 
 alias cs="cd ~/Studies/'CS F111'"
