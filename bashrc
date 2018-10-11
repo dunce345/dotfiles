@@ -11,6 +11,7 @@ alias v="vim"
 alias sv="sudo vim"
 alias w="weechat"
 alias sf="df -h | grep \"/dev/sd"\"
+alias spyu="sudo pacman -Syu"
 PS1='[\[\e[0;31m\]r0x0r\[\e[m\]|\[\e[1;36m\]\w\[\e[m\]] $'
 eval "$(dircolors /home/roshan/.dircolors)"
 
