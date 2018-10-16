@@ -23,7 +23,7 @@ font pango:Roboto Condensed 8
 
 #	--GEN SETTINGS--
 #Shutdown/Reboot/lock script
-bindsym $mod+Shift+Home exec --no-startup-id ~/.config/scripts/prompt2.sh
+bindsym $mod+Shift+Home exec --no-startup-id ~/.config/scripts/prompt2
 
 #Screen lock
 bindsym $mod+Shift+l exec --no-startup-id i3lock -i ~/.wallpaper/11.png 
@@ -220,7 +220,5 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #	--STARTUP--
-exec_always --no-startup-id feh --bg-max ~/.wallpaper/Wallpapers/505850.jpg
+exec_always --no-startup-id feh --bg-max ~/.wallpaper/facets-2.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
- 
-
