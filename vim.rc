@@ -55,7 +55,7 @@ filetype plugin indent on    " required
 "	      for Amiga:  s:.vimrc
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
-
+let g:hardtime_default_on = 1
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
