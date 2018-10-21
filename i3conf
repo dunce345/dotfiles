@@ -26,7 +26,7 @@ font pango:Roboto Condensed 8
 bindsym $mod+Shift+Home exec --no-startup-id ~/.config/scripts/prompt2
 
 #Screen lock
-bindsym $mod+Shift+l exec --no-startup-id i3lock -i ~/.wallpaper/11.png 
+bindsym $mod+Shift+o exec --no-startup-id i3lock -i ~/.wallpaper/11.png 
 
 # Take a screenshot upon pressing $mod+PrtSc (select an area)
 bindsym --release $mod+Print exec --no-startup-id import ~/scrshot/$(date '+%d_%m-%H_%M_%S').png
@@ -85,6 +85,7 @@ assign [class="Firefox"] 2
 assign [class="discord"] 10
 assign [Class="Evince"] 3
 
+
 # start a terminal
 bindsym $mod+Return exec --no-startup-id termite
 
@@ -111,16 +112,23 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-#bindsym $mod+Shift+j move left
-#bindsym $mod+Shift+k move down
-#bindsym $mod+Shift+l move up
-#bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+#Scratchpad Options
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+#Toggle Options
+bindsym $mod+t floating toggle
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -135,9 +143,6 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
-
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -220,5 +225,5 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #	--STARTUP--
-exec_always --no-startup-id feh --bg-max ~/.wallpaper/facets-2.jpg
+exec_always --no-startup-id feh --bg-max ~/.wallpaper/fearless-1.png
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
