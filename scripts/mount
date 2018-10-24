@@ -1,0 +1,9 @@
+#!/bin/bash
+
+drivelist=$(lsblk -lp | grep "t "$ | awk '{ print $1 " " "(" $4 ")"}' | dmenu -i -p "Select disk to mount:" -fn "Roboto Condensed") #Lists all mountable drives in dmenu.
+
+drive=${drivelist%%" "*} #Removes storage size from drivelist var string.
+
+mountpoint=$( find /mnt -maxdepth 1 -empty -type d | dmenu -i -p "Select mount point:" -fn "Roboto Condensed") #Lists all empty folders in /mnt.
+
+mount $drive $mountpoint
