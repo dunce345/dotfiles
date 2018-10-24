@@ -85,6 +85,9 @@ assign [class="Firefox"] 2
 assign [class="discord"] 10
 assign [Class="Evince"] 3
 
+#	--[QUICKSTART KEYBINDINGS]--
+bindsym $mod+m exec --no-startup-id ~/.config/scripts/mount
+bindsym $mod+Shift+m --no-startup-id ~/.config/scripts/umount
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id termite
