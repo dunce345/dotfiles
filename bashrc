@@ -4,7 +4,6 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-PATH="$HOME/.local/bin:$PATH"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -22,7 +21,7 @@ eval "$(dircolors /home/roshan/.dircolors)"
 
 alias cs="cd ~/Studies/'CS F111'"
 alias st-files="cd ~/.config/st-files"
-alias dots="cd ~/.config"
+alias conf="cd ~/.config"
 alias stuff="cd ~/stuff"
 alias dc"=cd ~/stuff/dcdl"
 alias dl="cd ~/Downloads/"

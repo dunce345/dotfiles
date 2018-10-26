@@ -85,8 +85,8 @@ assign [class="Firefox"] 2
 assign [class="discord"] 10
 assign [Class="Evince"] 3
 
-#	--[QUICKSTART KEYBINDINGS]--
-bindsym $mod+m exec --no-startup-id ~/.config/scripts/mount
+#	--[SCRIPT QUICKSTART KEYBINDINGS]--
+bindsym $mod+m exec ~/.config/scripts/mount
 bindsym $mod+Shift+m --no-startup-id ~/.config/scripts/umount
 
 # start a terminal
@@ -228,5 +228,5 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #	--STARTUP--
-exec_always --no-startup-id feh --bg-max ~/.wallpaper/fearless-1.png
+exec_always --no-startup-id feh --bg-fill ~/.wallpaper/outrun-blue.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
