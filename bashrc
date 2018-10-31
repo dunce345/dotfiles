@@ -4,6 +4,7 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+PATH="$PATH:$HOME/.local/bin"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -15,6 +16,8 @@ alias wifi-c="nmcli con up $1"
 alias wifi-off="nmcli radio wifi off"
 alias wifi-on="nmcli radio wifi on"
 alias wifi-list="nmcli dev wifi list"
+alias sm="sudo ~/.config/scripts/mount"
+alias sum="sudo ~/.config/scripts/umount"
 
 PS1='[\[\e[0;31m\]r0x0r\[\e[m\]|\[\e[1;36m\]\w\[\e[m\]] $'
 eval "$(dircolors /home/roshan/.dircolors)"
@@ -27,4 +30,3 @@ alias dc"=cd ~/stuff/dcdl"
 alias dl="cd ~/Downloads/"
 alias scrshot="cd ~/scrshot"
 alias scripts="cd ~/.config/scripts"
-PATH="$PATH:$HOME/.local/bin"
