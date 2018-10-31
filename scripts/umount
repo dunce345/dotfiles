@@ -1,0 +1,11 @@
+#!/bin/bash
+
+drivelist=$(lsblk -lp | grep "t /mnt"* | awk '{ print $1 "("$4")""-"$7}' | dmenu -i -p "Select disk to unmount" -fn "Roboto condensed") #Lists all mounted drives in /mnt
+
+if [[ -z $drivelist ]]; then
+		exit 1
+fi
+
+drive=${drivelist#*-}
+
+sudo -A umount $drive && exit 0

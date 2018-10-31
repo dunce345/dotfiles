@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 PATH="$PATH:$HOME/.local/bin"
+export SUDO_ASKPASS=~/.local/bin/ssh-askpass
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'

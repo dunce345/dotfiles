@@ -10,4 +10,4 @@ drive=${drivelist%%" "*} #Removes storage size from drivelist var string.
 
 mountpoint=$(find /mnt -maxdepth 1 -empty -type d | dmenu -i -p "Select mount point:" -fn "Roboto Condensed") #Lists all non-empty folders in /mnt.
 
-mount $drive $mountpoint && exit 0
+sudo -A mount $drive $mountpoint && exit 0
