@@ -2,12 +2,12 @@
 
 drivelist=$(lsblk -lp | grep "t "$ | awk '{ print $1 " " "(" $4 ")"}' | dmenu -i -p "Select disk to mount:" -fn "Roboto Condensed") #Lists all mountable drives in dmenu.
 
-if [[ -z $drivelist ]]; then
-		exit 1
+if [[ -z $drivelist ]]; then  #checks if drivelist string is not empty, if empty, exit with error.
+		notify-send "No Drive to mount!" && exit 1
 fi
 
 drive=${drivelist%%" "*} #Removes storage size from drivelist var string.
 
 mountpoint=$(find /mnt -maxdepth 1 -empty -type d | dmenu -i -p "Select mount point:" -fn "Roboto Condensed") #Lists all non-empty folders in /mnt.
 
-sudo -A mount $drive $mountpoint && exit 0
+sudo -A mount $drive $mountpoint &&  pgrep -x dunst && notify-send "$drive mounted to $mountpoint" && exit 0
