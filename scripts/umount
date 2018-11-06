@@ -8,4 +8,4 @@ fi
 
 drive=${drivelist#*-}
 
-sudo -A umount $drive && pgrep -x dunst && notify-send "$drive unmounted" && exit 0
+sudo -A umount $drive && pgrep -x dunst && notify-send "$drivelist unmounted" && exit 0
