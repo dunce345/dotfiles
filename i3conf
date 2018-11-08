@@ -228,5 +228,5 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #	--STARTUP--
-exec_always --no-startup-id feh --bg-fill ~/.wallpaper/Sophomore\ \(Final\).png
+exec_always --no-startup-id feh --bg-fill ~/.wallpaper/2D-Facets.png
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
