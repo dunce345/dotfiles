@@ -127,8 +127,8 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 #Scratchpad Options
-bindsym $mod+Shift+- move scratchpad
-bindsym $mod+- scratchpad show
+bindsym $mod+Shift+x move scratchpad
+bindsym $mod+x scratchpad show
 
 #Toggle Options
 bindsym $mod+t floating toggle
